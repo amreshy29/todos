@@ -4,7 +4,9 @@
   "description": "Redux Todos example",
   "scripts": {
     "start": "babel-node devServer.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,8 @@
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-cli": "^6.7.7",
@@ -34,5 +37,6 @@
     "express": "^4.13.3",
     "webpack": "^1.9.11",
     "webpack-dev-middleware": "^1.2.0"
-  }
+  },
+  "snyk": true
 }
